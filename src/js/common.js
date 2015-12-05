@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+ //прокрутка
 	$(function(){
 		$('.curtains').curtain({
 			scrollSpeed: 300,
@@ -10,6 +10,17 @@ $(document).ready(function() {
 			}
 		});
 	});
+
+	// выезд слайда
+
+	$(document).ready(function(){
+		$(".clicks").hover(function(e){
+			var slide = $(this).attr('id');
+			$("."+ slide).slideToggle("normal"); return false;
+		});
+	});
+
+
 
 
 	//Цели для Яндекс.Метрики и Google Analytics
