@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	$(function(){
+		$('.curtains').curtain({
+			scrollSpeed: 300,
+			controls: '.menu',
+			curtainLinks: '.curtain-links',
+			nextSlide: function(){
+				console.log("ok");
+			}
+		});
+	});
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
