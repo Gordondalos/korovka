@@ -4,16 +4,27 @@
 
 ol,ul
 	list-style: none
-
+a:hover
+	text-decoration: none
 
 .section0
 	width: 100%
+
+	.navbar-default
+		background: -moz-linear-gradient(top,  rgba(5,1,1,1) 0%, rgba(0,0,0,0.25) 75%, rgba(0,0,0,0) 100%)
+		background: -webkit-linear-gradient(top,  rgba(5,1,1,1) 0%,rgba(0,0,0,0.25) 75%,rgba(0,0,0,0) 100%)
+		background: linear-gradient(to bottom,  rgba(5,1,1,1) 0%,rgba(0,0,0,0.25) 75%,rgba(0,0,0,0) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050101', endColorstr='#00000000',GradientType=0 )
+
+
+
+		border: none
+
 
 	.navbar
 		margin-top: 0
 		opacity: 1
 		border-radius: 0
-
 
 	.navbar-brand
 
@@ -25,9 +36,12 @@ ol,ul
 		margin-left: 17px
 
 	.navbar-nav li
-		border-right: 1px solid $nav-bordeer
+		border: none
 	.navbar-nav a
 		font-size: 17px
+	.navbar-nav a:hover
+		background-color: $white
+		color: $black
 
 	.navbar-nav li a
 		padding: 34px 15px
@@ -41,7 +55,12 @@ ol,ul
 
 	.navbar-nav li.menu2
 		border: none
+	.navbar-nav .navigation
+		color: $white
 
+	.navbar-nav a.navigation:hover
+		background-color: $bg_hover_navigation
+		color: $navigation_black
 
 
 	.menu2 img
@@ -50,5 +69,23 @@ ol,ul
 	li.search2 a
 		padding: 30px 15px
 
-	.search2 a img
-		width: 28px
+	.search2 a.navigation
+		width: 65px
+		background-image: url('../img/search.png')
+		padding-bottom: 58px
+		background-repeat: no-repeat
+		background-position: center 30px
+
+	.search2 a.navigation:hover
+		background-image: url('../img/search2.png')
+
+
+	li.menu2 a.navigation
+		width: 65px
+		background-image: url('../img/menu.png')
+		padding-bottom: 58px
+		background-repeat: no-repeat
+		background-position: center 30px
+
+	li.menu2 a.navigation:hover
+		background-image: url('../img/menu2.png')
