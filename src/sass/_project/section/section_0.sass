@@ -1,6 +1,19 @@
 #section-1
-	background: url('/img/bgg.png') 50% 0 no-repeat
+	background: url('../img/bgg.jpg') 50% 0 no-repeat
 	background-size: cover
+
+	.navbar-nav ul.dropdown-menu a
+		padding: 8px 25px
+		text-align: center
+		font-family: $navigation-bold
+		text-transform: uppercase
+		color: $dark-blue
+		min-width: 232px
+		font-weight: 600
+	.divider
+		width: 80%
+		margin: auto
+		background-color: $nav-bordeer
 
 ol,ul
 	list-style: none
@@ -51,7 +64,7 @@ a:hover
 
 
 	.navbar-nav li.menu2 a
-		padding: 31px 25px
+		padding: 31px 40px
 
 	.navbar-nav li.menu2
 		border: none
@@ -80,12 +93,64 @@ a:hover
 		background-image: url('../img/search2.png')
 
 
-	li.menu2 a.navigation
+	li.menu2 a.dropdown-toggle
 		width: 65px
-		background-image: url('../img/menu.png')
+		background-image: url('../img/menu_icon_white.png')
 		padding-bottom: 58px
 		background-repeat: no-repeat
 		background-position: center 30px
 
-	li.menu2 a.navigation:hover
-		background-image: url('../img/menu2.png')
+	li.menu2 a.dropdown-toggle:hover
+		background-image: url('../img/menu_icon_reverse.png')
+		background-color: $bg_hover_navigation
+
+	li.menu2 a.dropdown-toggle:focus
+		background-image: url('../img/menu_icon_reverse.png')
+		background-color: $bg_hover_navigation
+
+
+
+ol.curtains
+	padding: 0
+
+.hidden_menu_block_dark
+	display: none
+	float: right
+	height: 90px
+	padding-top: 10px
+	width: 100%
+	margin: 0
+	background-color: $bg_hover_navigation
+	vertical-align: middle
+	position: fixed
+	margin-bottom: 100px
+	.col-xs-12, .col-xs-6
+		padding: 0
+	.dropdown
+		position: absolute
+		right: 30px
+		top: 20px
+	.search2
+		position: absolute
+		right: 80px
+		top: 20px
+	.dropdown-menu
+		top: 57px
+		border-radius: 0
+		a
+			background: none
+			color: $dark-blue
+			font-weight: 600
+		li
+			padding: 8px 0
+			background-color: $white
+			text-align: center
+	hr
+		margin: 0 auto
+		width: 80%
+		background-color: $bg_hover_navigation
+
+	.navbar-brand
+		padding: 18px 15px
+		img
+			height: 32px
