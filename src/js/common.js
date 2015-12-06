@@ -46,7 +46,7 @@ $(document).ready(function () {
 
         }
 // появление поиска
-   $('li.search2').hover(function(){
+   $('.search2').hover(function(){
 $('#search_form').toggle(function(){
     $('#search_form').css("opacity","1");
 
@@ -65,7 +65,7 @@ $('#search_form').toggle(function(){
 
 
     // появление поиска
-    $('li.search2').hover(function(){
+    $('.search2').hover(function(){
         $('#search_form2').toggle(function(){
             $('#search_form2').css("opacity","1");
 
