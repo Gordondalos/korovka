@@ -15,7 +15,7 @@
 		margin-top: -5%
 
 	.cow
-		background-image: url('../img/footer_design.png')
+		background-image: url('../img/footer_design_x2.png')
 		height: 200px
 		position: absolute
 		left: 0
@@ -27,6 +27,37 @@
 
 	a
 		font-size: 16px
+
+	span.footer_copy
+		color: $white
+		display: inline-block
+		width: 100%
+
+	span.footer_copy:before
+		border-top: 1px solid $white
+		content: ""
+		height: 1px
+		display: block
+		float: left
+		width: 70%
+		margin-right: 15px
+		margin-top: 10px
+
+
+	span.footer_copy_media_small
+		@extend span.footer_copy
+		text-align: center
+		width: 100%
+		margin-top: 40px
+	span.footer_copy_media_small:before
+		@extend span.footer_copy:before
+		display: none
+
+
+
+
+
+
 
 
 
@@ -61,6 +92,7 @@
 					@include triangle(17px,$white,down)
 					position: absolute
 					right: 40px
+
 
 
 

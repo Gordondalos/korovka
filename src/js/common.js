@@ -37,48 +37,44 @@ $(document).ready(function () {
 
 // манипуляции с итемками при изменении размера
     var winwidth = $(window).width();
-        if (winwidth < 480) {
-            $('p.item1').css("display", "block !important");
-            $('p.item2').css("display", "block !important");
+    if (winwidth < 480) {
+        $('p.item1').css("display", "block !important");
+        $('p.item2').css("display", "block !important");
 
-            $('.text_item > p').removeClass();
-            $('.down_item  p').remove();
+        $('.text_item > p').removeClass();
+        $('.down_item  p').remove();
 
-        }
-// появление поиска
-   $('.search2').hover(function(){
-$('#search_form').toggle(function(){
-    $('#search_form').css("opacity","1");
-
-   setTimeout(myfunc, 5000);
-
-   })
-   });
-
-    function myfunc(){
-        if (!$('#search_form input').is(":focus")) {
-            $('#search_form').css("opacity","0");
-        }
     }
+// появление поиска
+    $('.search2').mouseover(function (e) {
+        e.preventDefault();
+        $('#search_form').toggle(function () {
+            $('#search_form').css("opacity", "1");
 
-
-
-
-    // появление поиска
-    $('.search2').hover(function(){
-        $('#search_form2').toggle(function(){
-            $('#search_form2').css("opacity","1");
-
-            setTimeout(myfunc2, 5000);
 
         })
     });
 
-    function myfunc2(){
-        if (!$('#search_form2 input').is(":focus")) {
-            $('#search_form2').css("opacity","0");
-        }
-    }
+
+    // появление поиска
+    $('.search2').mouseover(function (e) {
+        e.preventDefault();
+        $('#search_form2').toggle(function () {
+            $('#search_form2').css("opacity", "1");
+
+
+        })
+    });
+
+    // появление поиска
+    $('#search2').click(function (e) {
+        e.preventDefault();
+        $('#search_form_mobile').toggle(function () {
+            $('#search_form_mobile').css("opacity", "1");
+
+        })
+    });
+
 
 
     //Цели для Яндекс.Метрики и Google Analytics

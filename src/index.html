@@ -7,72 +7,56 @@
 <html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="ru"> <!--<![endif]-->
-
 <head>
     //= templates/head.html
 </head>
-
 <body>
-
 <ol class="curtains">
-    <!--<li id="section-1" class="cover" data-parallax-background="-.05">-->
-
+    <!--Global_section_1-->
     <li id="section-1" class="cover">
-
+        <!--Header-->
         <header data-fade="550" data-slow-scroll="3">
-
             <!--bg-section-->
-            <section class="section0">
+            <section id="blind" class="section0">
                 //= templates/bg.html
             </section>
 
-            <!--up_menu-->
-            <section class="section1">
-                //= templates/up_menu.html
-            </section>
             <!--lid_section-->
-            <section class="section2">
+            <section id="lid" class="section2">
                 //= templates/lid.html
             </section>
         </header>
+        <!--//Header-->
     </li>
+    <!--//Global_section_1-->
+    <!--Global_section_2-->
     <li id="section-2">
         <div class="colors">
-
             <!--dubble_menu-->
-            <section class="section3">
+            <section id="dubble_menu" class="section3">
                 //= templates/dubble_menu.html
             </section>
             <!--h1_heading_section-->
-            <section class="section4">
+            <section id="h1_heading_section" class="section4">
                 //= templates/h1_heading_section.html
             </section>
             <!--item-->
-            <section class="section5">
+            <section id="item_block" class="section5">
                 //= templates/item.html
             </section>
-            <!--item_3-->
-            <section class="section6">
-
-            </section>
-            <!--sky_end_kow-->
-            <section class="section7">
-                //= templates/sky_end_kow.html
-            </section>
-            <!--footer_nav-->
-            <section class="section8">
-                //= templates/footer_nav.html
-            </section>
-            <!--copy-->
-            <section class="section9">
-                //= templates/copy.html
-            </section>
+            <!--//item-->
+            <!--FOOTER-->
+            <footer>
+                <!--sky_end_cow-->
+                <section id="sky_end_cow" class="section7">
+                    //= templates/sky_end_kow.html
+                </section>
+            </footer>
+            <!--end FOOTER-->
         </div>
     </li>
-
+    <!--//Global_section_2-->
 </ol>
-
-
 //= templates/js.html
 </body>
 </html>
