@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>LogIn Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Atomic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Groups" sketch:type="MSArtboardGroup" transform="translate(-921.000000, -28.000000)" stroke-linecap="round" stroke="#333333" stroke-linejoin="round">
+            <g id="Section-/-Header-NEW" sketch:type="MSLayerGroup">
+                <g id="Sign-In" transform="translate(921.000000, 25.000000)" sketch:type="MSShapeGroup">
+                    <g id="LogIn-Icon" transform="translate(0.000000, 4.000000)">
+                        <path d="M6,0 L13.4586434,0 L13.4586434,18.2432161 L6.08776572,18.2432161" id="Path-3408"></path>
+                        <g id="Path-3409-+-Path-3409" transform="translate(0.000000, 5.500000)">
+                            <path d="M0,3.66210938 L9.54944248,3.66210938 L5.77539062,0" id="Path-3409"></path>
+                            <path d="M9.44165039,3.71850586 L5.80273438,7.53594971" id="Path-3409"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,160 @@
+.section_1
+	.navbar-default .navbar-nav  li  a,
+	.navbar-default .navbar-nav  li  a:hover,
+	.navbar-default .navbar-nav  li  a:focus
+		color: $black
+	.dropdown
+		padding-left: 12px
+		padding-top: 10px
+		a.dropdown-toggle
+			background-image: url('../img/menu2.png')
+			background-position: center
+			background-repeat: no-repeat
+
+	.buttonsearch
+		i
+			color: $black
+	.searchbardiv
+		margin-top: -6px
+
+
+#searchsubmit3, #searchsubmit, #searchsubmit1
+	background-color: $light-blue
+	background-image: url('../img/search.png')
+	background-repeat: no-repeat
+	background-position: center
+	border-radius: 0
+	width: 70px
+	height: 35px
+
+#formsearch3, #formsearch, #formsearch1
+	margin: auto
+	padding: 20px
+	color: $black
+	background-color:  $bg_hover_navigation
+
+//hidden menu for small display
+.nav_hidden
+	display: none
+	position: fixed
+	left: 50%
+	transform: translateX(-50%)
+	background-color: $white
+	width: 100%
+	z-index: 1000
+	margin: 0
+	padding-right: 0
+
+	.navbar-default
+		margin: 0
+		.navbar-nav .open  a,
+		.navbar-nav a
+			//background-color: $white
+		.navbar-nav .open  a:hover,
+		.navbar-nav .open  a:focus
+			background-color: $bg_hover_navigation
+		.glyphicon
+			color: $black
+	ul
+		float: right
+		.buttonsearch i
+			color: $black
+		.dropdown a.dropdown-toggle
+			background-image: url('../img/menu2.png')
+		.search
+			width: 74px
+			padding: 0 5px
+			height: 66px
+			border-right: 1px solid $nav-bordeer
+			border-left: 1px solid $nav-bordeer
+			a
+				height: 100%
+				width: 100%
+				display: block
+		.dropdown-menu
+			margin-top: 0
+			left: - 164px
+			border-top: none
+			background-color:  $bg_hover_navigation
+			li.divider
+				border-bottom: 1px solid $nav-bordeer
+			li
+				&:first-child
+					padding-top: 7px
+
+				a
+					background-color:  $bg_hover_navigation !important
+
+
+	.form-control:focus
+		box-shadow: none
+	.navbar-default .navbar-nav li.search
+		padding: 22px 14px 25px
+		//border-right: 1px solid red
+		//border-left: 1px solid red
+		a
+			padding: 22px 45px 44px 25px
+			margin: -22px -12px -25px
+			cursor: pointer
+			background-position: center
+
+
+#ul-dubble_menu
+	border-left: 1px solid $nav-bordeer
+
+	li
+		border-right: 1px solid $nav-bordeer
+		&:active
+			background-color: $bg_hover_navigation
+		&:visited
+			background-color: $bg_hover_navigation
+		&:hover
+			background-color: $bg_hover_navigation
+	.dropdown-menu
+		li
+			border: none
+
+.dubble_menu_wrapper
+	border-left: 1px solid $nav-bordeer
+
+.nav_dubble_menu
+	border-bottom: 1px solid $nav-bordeer
+	margin-top: -20px
+	margin-bottom: -1px
+	z-index: 1000
+	background: $white
+
+
+.navbar-fixed-top
+	margin-bottom: 0
+
+#buttonsearch1
+	padding: 0
+
+.li_buttonsearch1
+	padding: 24px
+
+
+
+#searchsubmit1
+	padding-bottom: 7px
+
+// dubble menu for phones
+.hidden-drop-menu
+	margin: 0
+	display: none
+	padding: 0 20px
+	width: 100%
+	text-align: center
+	border-top: none
+	background-color:  $bg_hover_navigation
+	li
+		padding: 5px
+		border-bottom: 1px solid $nav-bordeer
+	li
+		&:first-child
+			padding-top: 7px
+
+		a
+			color: $navigation_black
+			background-color:  $bg_hover_navigation !important
