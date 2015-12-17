@@ -67,6 +67,12 @@ $(document).ready(function () {
 
 
 
+    // выезжание итемок
+      $(".items").hover(function () {
+        var slide = $(this).attr('id');
+        $("." + slide).slideToggle("normal");
+        return false;
+    });
 
 
 });
