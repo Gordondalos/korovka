@@ -6,39 +6,62 @@ $(document).ready(function () {
 
 
     //menu drop
-    $('.drop_nav').click(function(){
-        $('.drop_nav').toggleClass('blak_nav');
-        $('.drop_nav i').toggleClass('blak_nav');
+    $('.app').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('blak_nav');
+        $('.app i').toggleClass('blak_nav');
         $('.drop_menu').slideToggle('fast');
 
     });
 
 
+    $('.down').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('blak_nav');
+        $('.down i').toggleClass('blak_nav');
+        $('.drop_menu_down').slideToggle('fast');
 
-// search
-    $('.search').click(function(){
+    });
+
+
+    // поиск верхний и нижний
+
+    $('.apps').click(function(e){
+        e.preventDefault();
         $('.search_form').slideToggle('fast',function(){
-            var i = $('.search i').hasClass('fa-close');
+                var i = $('.apps i').hasClass('fa-close');
+                if(!i){
+                    $('.apps i').remove();
+                    $('.apps').prepend("<i class='fa fa-close'></i>");
+                    $('.apps i').css('color', 'black');
+
+                }else{
+                    $('.apps i').remove();
+                    $('.apps').prepend("<i class='fa fa-search'></i>");
+                }
+            });
+            $('.apps').toggleClass('blak_nav');
+            $('.apps i').toggleClass('blak_nav');
+
+    });
+
+
+    $('.downs').click(function(e){
+        e.preventDefault();
+        $('.search_form_down').slideToggle('fast',function(){
+            var i = $('.downs i').hasClass('fa-close');
             if(!i){
-                $('.search i').remove();
-                $('.search').prepend("<i class='fa fa-close'></i>");
-                $('.search i').css('color', 'black');
+                $('.downs i').remove();
+                $('.downs').prepend("<i class='fa fa-close'></i>");
+                $('.downs i').css('color', 'black');
 
             }else{
-                $('.search i').remove();
-                $('.search').prepend("<i class='fa fa-search'></i>");
-
+                $('.downs i').remove();
+                $('.downs').prepend("<i class='fa fa-search'></i>");
             }
-
-
         });
-        $('.search').toggleClass('blak_nav');
-
-
-
-
-
-        $('.search i').toggleClass('blak_nav');
+        $('.downs').toggleClass('blak_nav');
+        $('.downs i').toggleClass('blak_nav');
 
     });
 

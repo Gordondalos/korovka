@@ -22,14 +22,14 @@
 			background-color: $bg_hover_navigation
 		i
 			font-size: 24px
-			padding: 22px 11px 28px
+			padding: 22px 11px 30px
 			&:hover
 				color: black
 				background-color: $bg_hover_navigation
 
 	.search
 		width: 55px
-		padding: 22px 11px 27px
+		padding: 22px 11px 28px
 		text-align: center
 		&:hover
 			color: black
@@ -47,6 +47,19 @@
 		padding: 20px 11px
 		&:hover
 			background: none
-.blak_nav
-	color: black
-	background-color: $bg_hover_navigation
+	.blak_nav
+		color: black
+		background-color: $bg_hover_navigation
+
+.white_menu_horisontal
+	background-color: $white
+	border-bottom: 1px solid $nav-bordeer
+	@extend .black_menu_horisontal
+	.navigation
+		a
+			color: $navigation_black
+		li
+			border-left: 1px solid $nav-bordeer
+	.search
+		i
+			color: $navigation_black
