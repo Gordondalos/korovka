@@ -5,6 +5,10 @@
 	margin-top: -2px
 	background-color: $bg_hover_navigation
 	text-align: center
+	box-shadow: 1px 4px 5px $black
+	margin-bottom: -79px
+	position: absolute
+	z-index: 1000
 	input
 		margin: 20px auto
 		display: inline-block
@@ -25,3 +29,8 @@
 
 .search_form_down
 	@extend .search_form
+.search_form_up
+	@extend .search_form
+	position: fixed
+	top: 77px
+	z-index: 1000

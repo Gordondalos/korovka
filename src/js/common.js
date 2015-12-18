@@ -5,6 +5,16 @@ $(document).ready(function () {
     $('header').css('height', page_h);
 
 
+    //menu drop large
+    $('.drop_menu_l').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('blak_nav');
+        $('.drop_menu_l i').toggleClass('blak_nav');
+        $('.drop_menu_large').slideToggle('fast');
+
+    });
+
+
     //menu drop
     $('.app').click(function(e){
         e.preventDefault();
@@ -24,7 +34,7 @@ $(document).ready(function () {
     });
 
 
-    // поиск верхний и нижний
+    // поиск верхний и нижний  и для маленького меню
 
     $('.apps').click(function(e){
         e.preventDefault();
@@ -62,6 +72,26 @@ $(document).ready(function () {
         });
         $('.downs').toggleClass('blak_nav');
         $('.downs i').toggleClass('blak_nav');
+
+    });
+
+
+    $('.apps_sm').click(function(e){
+        e.preventDefault();
+        $('.search_form_up').slideToggle('fast',function(){
+            var i = $('.apps_sm i').hasClass('fa-close');
+            if(!i){
+                $('.apps_sm i').remove();
+                $('.apps_sm').prepend("<i class='fa fa-close'></i>");
+                $('.apps_sm i').css('color', 'black');
+
+            }else{
+                $('.apps_sm i').remove();
+                $('.apps_sm').prepend("<i class='fa fa-search'></i>");
+            }
+        });
+        $('.apps_sm').toggleClass('blak_nav');
+        $('.apps_sm i').toggleClass('blak_nav');
 
     });
 
