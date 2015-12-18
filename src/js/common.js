@@ -8,6 +8,34 @@ $(document).ready(function () {
     //menu drop large
     $('.drop_menu_l').click(function(e){
         e.preventDefault();
+        var page_h= $(window).height();
+        if(page_h<714){
+            $('.drop_menu_large').css("position","relative");
+            // определим высоту по вертикали
+            var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+            var drop_menu_large = $('.drop_menu_large').scrollTop();
+
+            if(posTop>drop_menu_large){
+
+                $('.drop_menu_large').css("margin-top",posTop);
+                //var i = $('.drop_menu_l i').hasClass('fa-close');
+                //if(!i){
+                //    $('.drop_menu_l i').remove();
+                //    $('.drop_menu_l').prepend("<i class='fa fa-close'></i>");
+                //    $('.drop_menu_l i').css('color', 'black');
+                //
+                //}else{
+                //    $('.drop_menu_l i').remove();
+                //    $('.drop_menu_l').prepend("<i class='fa fa-bars'></i>");
+                //}
+            }else{
+                $('.drop_menu_large').css("margin-top",0);
+            }
+
+          //  console.log(drop_menu_large);
+        
+
+        }
         $(this).toggleClass('blak_nav');
         $('.drop_menu_l i').toggleClass('blak_nav');
         $('.drop_menu_large').slideToggle('fast');
