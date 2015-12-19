@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 // высота страницы для беграунда
     var page_h= $(window).height()+20;
-    $('header').css('height', page_h);
+    $('.header').css('height', page_h);
 
     $('#button_down').click(function(e){
         e.preventDefault()
