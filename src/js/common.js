@@ -17,20 +17,19 @@ $(document).ready(function () {
             return $(this).attr("src").replace(".svg", ".png");
         });
     }
-    ;
 
     //menu drop large
     $('.drop_menu_l').click(function(e){
         e.preventDefault();
         var page_h= $(window).height();
         if(page_h<714){
-            $('.drop_menu_large').css("position","relative");
+            $('.drop_menu_large').css("position","absolute");
             // определим высоту по вертикали
             var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
             var drop_menu_large = $('.drop_menu_large').scrollTop();
 
             if(posTop>drop_menu_large){
-                posTop = posTop-59;
+                posTop = posTop-79;
                 $('.drop_menu_large').css("margin-top",posTop);
                 //var i = $('.drop_menu_l i').hasClass('fa-close');
                 //if(!i){
@@ -43,7 +42,7 @@ $(document).ready(function () {
                 //    $('.drop_menu_l').prepend("<i class='fa fa-bars'></i>");
                 //}
             }else{
-                $('.drop_menu_large').css("margin-top","-59px");
+                $('.drop_menu_large').css("margin-top","-79px");
             }
 
           //  console.log(drop_menu_large);
