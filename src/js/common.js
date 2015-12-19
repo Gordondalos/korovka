@@ -16,7 +16,7 @@ $(document).ready(function () {
             var drop_menu_large = $('.drop_menu_large').scrollTop();
 
             if(posTop>drop_menu_large){
-
+                posTop = posTop-59;
                 $('.drop_menu_large').css("margin-top",posTop);
                 //var i = $('.drop_menu_l i').hasClass('fa-close');
                 //if(!i){
@@ -29,7 +29,7 @@ $(document).ready(function () {
                 //    $('.drop_menu_l').prepend("<i class='fa fa-bars'></i>");
                 //}
             }else{
-                $('.drop_menu_large').css("margin-top",0);
+                $('.drop_menu_large').css("margin-top","-59px");
             }
 
           //  console.log(drop_menu_large);
