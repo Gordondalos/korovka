@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 // высота страницы для беграунда
-    var page_h= $(window).height();
+    var page_h= $(window).height()+20;
     $('header').css('height', page_h);
 
     $('#button_down').click(function(e){
@@ -9,8 +9,6 @@ $(document).ready(function () {
         var destination = page_h;
         $('body,html').animate({scrollTop: destination}, 1000, 'linear');
     });
-
-
 
 
     //SVG Fallback
