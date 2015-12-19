@@ -136,14 +136,17 @@ $(document).ready(function () {
 
     });
 
-
-
     // выезжание итемок
-      $(".items").hover(function () {
-        var slide = $(this).attr('id');
-        $("." + slide).slideToggle("normal");
-        return false;
-    });
+    var page_w= $(window).width();
+    if(page_w>1022){
+        $(".items").hover(function () {
+            var slide = $(this).attr('id');
+            $("." + slide).slideToggle("normal");
+            return false;
+        });
+
+    }
+
 
 
 });
