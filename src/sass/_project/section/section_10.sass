@@ -1,8 +1,12 @@
 // section 10 partners
 .section_10
+	.padding_revraiter
+		padding: 5px
+
 
 .button_partner-wrap-button
-	padding: 15px 0
+	padding: 5px 0 8px
+
 	&:after
 		border-bottom: 2px solid $navigation_black_hover
 		display: block
@@ -13,9 +17,11 @@
 	button
 		display: block
 		float: left
-		margin-right: 15px
+		margin-right: 10px
 		background-color: $light-blue
 		border: none
+		padding: 11px 25px
+		font-size: 12px
 		&.activ
 			background-color: $dark-blue
 
@@ -23,7 +29,7 @@
 .partner_items
 	padding-bottom: 100px
 	.item
-		padding: 15px
+		padding: 12px 7px
 		border-bottom: 2px solid $nav-bordeer
 		position: relative
 
@@ -45,6 +51,7 @@
 
 ul.adress_partners
 	position: relative
+	padding-left: 11px
 	&:before
 		background-image: url("../img/Icons/fill-1.png")
 		background-repeat: no-repeat
@@ -57,6 +64,7 @@ ul.adress_partners
 		content: ''
 	li
 		position: relative
+		line-height: 22px
 		a
 			line-height: 22px
 
@@ -132,3 +140,8 @@ ul.adress_partners
 		margin-left: -25px
 		top: -1px
 		content: ''
+
+.adresses
+	padding-left: 12px
+	li
+		line-height: 22px
