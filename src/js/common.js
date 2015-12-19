@@ -4,6 +4,22 @@ $(document).ready(function () {
     var page_h= $(window).height();
     $('header').css('height', page_h);
 
+    $('#button_down').click(function(e){
+        e.preventDefault()
+        var destination = page_h;
+        $('body,html').animate({scrollTop: destination}, 1000, 'linear');
+    });
+
+
+
+
+    //SVG Fallback
+    if (!Modernizr.svg) {
+        $("img[src*='svg']").attr("src", function () {
+            return $(this).attr("src").replace(".svg", ".png");
+        });
+    }
+    ;
 
     //menu drop large
     $('.drop_menu_l').click(function(e){
