@@ -26,6 +26,20 @@ $body-font-famaly-small: Lato-Regular, $helvetica
 $navigation-bold: LatoBold, $helvetica
 $bg-item: #efefef
 
+
+.icon
+	font-family: Icon, $helvetica
+	font-size: 28px !important
+	font-style: normal
+	background-position: bottom
+	font-weight: 600
+	display: block
+	width: 100%
+	padding: 0
+	height: 100%
+	text-decoration: none !important
+
+
 h1
 	font-family: $Heading-famaly
 	font-size: 63px
@@ -58,12 +72,32 @@ body
 	color: $black
 
 
-.navigation a
-	font-family: $navigation-bold
-	font-size: 14px
-	color: $navigation_white
-	line-height: 20px
-	text-transform: uppercase
+
+.exit
+	position: relative
+	&:after
+		content: ""
+		background-image: url(../img/Icons/sign_in_icon.png)
+		background-repeat: no-repeat
+		background-position: center
+		width: 14px
+		height: 21px
+		position: absolute
+		right: -20px
+		top: -5px
+
+
+.navigation
+	a
+		font-family: $navigation-bold
+		font-size: 14px
+		color: $navigation_white
+		line-height: 20px
+		text-transform: uppercase
+
+
+
+
 
 .colors
 	background-color: $white
