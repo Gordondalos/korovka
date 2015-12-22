@@ -8,6 +8,16 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="ru"> <!--<![endif]-->
 <head>
+    <!--[if lt IE 7 ]>
+    <html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]>
+    <html class="ie ie7" lang="en"> <![endif]-->
+    
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <html lang="ru"> <!--<![endif]-->
+    <head>
+    
+    
     <meta charset="utf-8">
     <title>Заголовок</title>
     <meta name="description" content="">
@@ -18,6 +28,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <!--[if IE 8 ]>
+        <script>$.debugBGS = true;</script>
+        <script src="js/jquery.backgroundSize.js"></script>
+    <link rel="stylesheet" href="css/ie8.css">
+    <html class="ie ie8" lang="en">
+    <![endif]-->
 </head>
 <body>
 <header>
@@ -336,6 +352,9 @@
     
     <!--Navigation_footer-->
     <nav>
+    <div class="div-wrapper-footer-ie">
+    
+    
         <div class="container-fluid">
             <!--visible_menu_footer-->
             <div class="container visible_menu_footer">
@@ -462,6 +481,7 @@
             </div>
             <!-- end block hidden_menu_footer -->
         </div>
+    </div>
     </nav>
     <!--//Navigation_footer-->
 </section>

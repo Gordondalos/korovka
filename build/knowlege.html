@@ -8,6 +8,16 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="ru"> <!--<![endif]-->
 <head>
+    <!--[if lt IE 7 ]>
+    <html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]>
+    <html class="ie ie7" lang="en"> <![endif]-->
+    
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <html lang="ru"> <!--<![endif]-->
+    <head>
+    
+    
     <meta charset="utf-8">
     <title>Заголовок</title>
     <meta name="description" content="">
@@ -18,6 +28,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <!--[if IE 8 ]>
+        <script>$.debugBGS = true;</script>
+        <script src="js/jquery.backgroundSize.js"></script>
+    <link rel="stylesheet" href="css/ie8.css">
+    <html class="ie ie8" lang="en">
+    <![endif]-->
 </head>
 <body>
 <header>
@@ -200,7 +216,7 @@
                         <div class="row item-wrap">
                             <div class="col-sm-4">
                                 <div class="item item_1">
-                                    <div class="bg_item">
+                                    <div class="bg_item bgitemas">
                                         <span>NADIS</span>
     
                                         <p>National Animal Disease Information Service</p>
@@ -213,12 +229,12 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="item item_2">
-                                    <div class="bg_item">
+                                    <div class="bg_item bgitemas">
                                         <span>DISEASE SUMMARIES</span>
     
                                         <p></p>
     
-                                        <div class="view-wrap">
+                                        <div class="view-wrap" >
                                             <a href="#" class="btn_reverse view">VIEW</a>
                                         </div>
                                     </div>
@@ -228,7 +244,7 @@
                             </div>
                             <div class="col-sm-4">
                                 <div class="item item_3">
-                                    <div class="bg_item">
+                                    <div class="bg_item bgitemas" >
                                         <span>CHAWG</span>
     
                                         <p>Cattle Health and Welfare Group</p>
@@ -255,7 +271,7 @@
     
                                 <div class="col-sm-6 padding_revriter">
                                     <div class="item item_3">
-                                        <div class="bg_item">
+                                        <div class="bg_item bgitemas">
                                             <span>DIARY SOLUTION</span>
     
     
@@ -267,8 +283,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 padding_revriter">
-                                    <div class="item item_3">
-                                        <div class="bg_item">
+                                    <div class="item item_3 ">
+                                        <div class="bg_item bgitemas">
                                             <span>KINGSHAY</span>
     
                                             <div class="view-wrap">
@@ -300,6 +316,9 @@
     
     <!--Navigation_footer-->
     <nav>
+    <div class="div-wrapper-footer-ie">
+    
+    
         <div class="container-fluid">
             <!--visible_menu_footer-->
             <div class="container visible_menu_footer">
@@ -426,6 +445,7 @@
             </div>
             <!-- end block hidden_menu_footer -->
         </div>
+    </div>
     </nav>
     <!--//Navigation_footer-->
 </section>
