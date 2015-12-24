@@ -1,70 +1,40 @@
-// section_2 item_block
-
-.item_block
-	padding-top: 40px
-	opacity: 1
-	h3
-		line-height: 51px
-	.col-sm-6,.col-md-4
-		padding: 5px
-		position: relative
 
 
+.item_block__wrap
+	height: 316px
+	background-color: grey
+	background-image: url(../img/man2.png)
+	background-repeat: no-repeat
+	background-size: cover
+	margin-bottom: 30px
 
-.col-sm-6
-	.item_block__wrap
-		max-height: 316px
+.item_block__wrap1
+	@extend .item_block__wrap
+	background-image: url(../img/man.png)
 
 .item_block__text
 	position: absolute
-	bottom: 0
-	left: 0
-	width: 100%
-	padding: 0 28px 3px
 	background-color: rgba(255, 255, 255, 0.7)
-	h3
-		margin-top: 10px
-		margin-bottom: 11px
+	width: 100%
+	padding: 10px
+	bottom: 15px
 	p
 		display: none
-		margin-bottom: 15px
 
-
-
-.col-md-4
-	.item_block__text
-		padding: 0 29px 0
-		h4
-			line-height: 54px
-			font-size: 38px
-			margin-top: 6px
-
-		&:hover
-			background: none
-
-
-.hidden_line
-	display: none
-
-.bg_item_small
-	position: absolute
-	width: 100%
-	top: 0
-	left: 0
-	height: 100%
-	padding: 23px 14px 0
-.div_bgg
-	background-color: rgba(0, 23, 255, 0.3)
-	width: 100%
-	min-height: 188px
-	height: 100%
-	display: none
 .hidden_button_item_main
 	display: none
 
+.relative
+	position: relative
 
-
-
-
-
-
+.col-md-4
+	.item_block__wrap3
+		@extend .item_block__wrap
+		background-image: url(../img/item3.jpg)
+		height: 215px
+	.item_block__wrap4
+		@extend .item_block__wrap3
+		background-image: url(../img/item4.jpg)
+	.item_block__wrap5
+		@extend .item_block__wrap3
+		background-image: url(../img/item5.jpg)
