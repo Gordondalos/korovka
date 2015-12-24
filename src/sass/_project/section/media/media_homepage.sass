@@ -11,7 +11,8 @@
 		background-position: 0 0
 	.small_menu
 		top: 0
-
+	.section_2
+		margin-top: 65px
 
 	.main_lid
 		display: none
@@ -38,26 +39,27 @@
 		background: $bg_line
 		margin: -22px auto 20px
 
-	.item_block .col-sm-6
-		padding: 8px 14px 19px
-		.item_block__text
-			position: relative
-			margin-top: -67px
-			padding: 3px 0
 
-			h3
-				font-size: 38px
-				line-height: 45px
-				text-align: center
-			p
-				display: block !important
-				margin-top: 18px
-				line-height: 22px
+	.item_block__text
+		position: relative
+		margin-top: -70px
+		padding: 3px 0
 
+		h3
+			font-size: 38px
+			line-height: 45px
+			text-align: center
+			margin-top: 5px
+		p
+			display: block !important
+			margin-top: 18px
+			line-height: 22px
 
-	.item_block__wrap
-		img
-			min-height: 214px
+	.logo_ul
+		margin-left: -15px
+	.small_menu ul.navigation
+		margin-right: -15px
+
 
 	.hidden_button_item_main
 		// Text style for "KNOWLEDGE CENT"
@@ -75,6 +77,9 @@
 			min-height: 188px
 		.item_block__text
 			position: relative
+			margin-top: 0
+			background: none
+
 			h4
 				line-height: 45px
 				position: absolute
@@ -84,17 +89,30 @@
 				text-align: center
 				color: $white
 
-			a
-				position: absolute
-				top: -61px
-				left: 50%
-				transform: translateX(-50%)
-				text-align: center
-				padding: 6px 15px
-	.div_bgg
+		a
+			position: absolute
+			top: -61px
+			left: 50%
+			transform: translateX(-50%)
+			text-align: center
+			padding: 6px 15px
+		.div_bgg
+			display: block
+
+	.item_block__wrap,
+	.item_block__wrap1
+		height: 211px
+	.col-md-4 .item_block__wrap3,
+	.col-md-4 .item_block__wrap4,
+	.col-md-4 .item_block__wrap5
+		height: 211px
+		margin-bottom: 0
+
+	.bg_item_small
 		display: block
+		background-color: rgba(20,30,90,0.7)
 
-
+		height: 211px
 
 
 ///* Medium Devices, Desktops */
