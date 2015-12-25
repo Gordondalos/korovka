@@ -75,8 +75,13 @@
 			a
 				font-size: 25px
 			.panel-title
-				span
+				span.triangle_down
 					@include triangle(12px,$white,down)
+					position: absolute
+					right: 31px
+					top: 21px
+				span.triangle_up
+					@include triangle(12px,$white,up)
 					position: absolute
 					right: 31px
 					top: 21px
@@ -86,7 +91,7 @@
 				font-size: 14px
 				line-height: 23px
 
-			
+
 		
 
 .cow

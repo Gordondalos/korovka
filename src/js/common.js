@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // поиск верхний и нижний  и для маленького меню
+    // РїРѕРёСЃРє РІРµСЂС…РЅРёР№ Рё РЅРёР¶РЅРёР№  Рё РґР»СЏ РјР°Р»РµРЅСЊРєРѕРіРѕ РјРµРЅСЋ
 
 
 
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
 
-// высота страницы для беграунда
+// РІС‹СЃРѕС‚Р° СЃС‚СЂР°РЅРёС†С‹ РґР»СЏ Р±РµРіСЂР°СѓРЅРґР°
     var page_h= $(window).height()+20;
     $('.header').css('height', page_h);
 
@@ -93,7 +93,7 @@ $(document).ready(function () {
         var page_h= $(window).height();
         if(page_h<714){
             $('.drop_menu_large').css("position","absolute");
-            // определим высоту по вертикали
+            // РѕРїСЂРµРґРµР»РёРј РІС‹СЃРѕС‚Сѓ РїРѕ РІРµСЂС‚РёРєР°Р»Рё
             var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
             var drop_menu_large = $('.drop_menu_large').scrollTop();
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
 
 
 
-    // выезжание итемок
+    // РІС‹РµР·Р¶Р°РЅРёРµ РёС‚РµРјРѕРє
     var page_w= $(window).width();
     if(page_w>1022){
         $(".items").hover(function () {
@@ -195,7 +195,7 @@ $(document).ready(function () {
     //console.log(br[1]);
 
     if(br[1]=="8" || br[1]=="9"){
-      
+
         $('.item_block__wrap').css( "background-size", "cover" );
         $('.item_block__wrap1').css( "background-size", "cover" );
         $('.item_block__wrap3').css( "background-size", "cover" );
@@ -204,13 +204,33 @@ $(document).ready(function () {
     }
 
 
-// открывашка партнеров
+// РѕС‚РєСЂС‹РІР°С€РєР° РїР°СЂС‚РЅРµСЂРѕРІ
     $(".toogle-img-partners").click(function(){
         var id = $(this).attr('id');
         $("#"+id).toggleClass("rotate");
         $("."+id).slideToggle("fast", function(){
             $("."+id).attr("display","none");
         });
+    });
+
+
+    // Р”РѕСЂР°Р±РѕС‚РєР° РєР»РёРєР° РїРѕ С„СѓС‚РµСЂСѓ РЅР° РјРѕР±РёР»СЊРЅС‹С…
+    $('.panel-title span').click(function(){
+        $(this).parent().children("a").trigger('click');
+
+    });
+
+    $(".panel-title a").click(function(e){
+        e.preventDefault();
+        var triangle_variant = $(this).parent().children("span").hasClass("triangle_down");
+        if(triangle_variant){
+            $(this).parent().children("span").removeClass("triangle_down");
+            $(this).parent().children("span").addClass("triangle_up");
+
+        }else{
+            $(this).parent().children("span").removeClass("triangle_up");
+            $(this).parent().children("span").addClass("triangle_down");
+        }
     });
 
 
