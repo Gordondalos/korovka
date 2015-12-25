@@ -155,8 +155,6 @@ $(document).ready(function () {
             var top_position_min = $("#sticker").parent().parent().position().top;
             var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
-
-
             if(posTop < top_position_min){
                 var top_position_navbar = top_position_min;
                 var left_position_navbar = $(this).position().left;
@@ -173,24 +171,26 @@ $(document).ready(function () {
 
     });
 
-
-
+ // позиционирование выпадающих пунктов меню по вертикали
     window.onscroll = function() {
-
         var top_position_min = $("#sticker").parent().parent().position().top;
         var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         var heigth_navbar = $('.down').height();
         var left_position_navbar = $('.down').position().left;
-        console.log(posTop);
+
         if(posTop < top_position_min){
             $(".drop_menu_down").offset({top:top_position_min+heigth_navbar, left:left_position_navbar-167});
+            $(".search_form_down").offset({top:top_position_min+heigth_navbar});
         }else{
             $(".drop_menu_down").offset({top:posTop+heigth_navbar, left:left_position_navbar-167});
+            $(".search_form_down").offset({top:posTop+heigth_navbar});
         }
+
+
 
     };
 
-
+    // end ... выпадение меню на больших экранах селективно к главной странице
 
 
     // выезжание итемок
