@@ -28,7 +28,7 @@
 				margin-bottom: 6px
 		
 	.dashboard
-		max-height: 243px
+		max-height: 350px
 
 	.section_8
 		margin-top: 0
@@ -58,7 +58,6 @@
 					transform: translateX(-50%)
 					a
 						padding: 7px 15px
-
 
 		.row
 			background: none
@@ -90,6 +89,10 @@
 	.knowledge_center_item_part_2 .row:first-child
 		min-height: 50px
 
+	.section_7 .lid h3
+		text-align: center
+	.knowledge_center_item_part_1 h3, .knowledge_center_item_part_2 h3
+		text-align: center
 
 ///* Medium Devices, Desktops */
 //
@@ -100,8 +103,9 @@
 	.knowledge_center_item_part_1,
 	.knowledge_center_item_part_2
 		.item
-			min-height: 300px
-
+			min-height: 200px
+	.dashboard
+		max-height: 300px
 //* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.knowledge_center_item_part_1,
@@ -112,6 +116,13 @@
 		.item
 			.bg_item
 				padding-top: 16%
+	.dashboard
+		max-height: 243px
+
+	.section_7 .lid h3
+		text-align: left
+	.knowledge_center_item_part_1 h3, .knowledge_center_item_part_2 h3
+		text-align: left
 
 
 //@media only screen and (max-width : 380px)
@@ -136,12 +147,14 @@
 //
 //
 ///* Medium Devices, Desktops */
-////@media only screen and (min-width : 992px)
-//
+//@media only screen and (min-width : 992px)
+
 //
 //
 ///* Large Devices, Wide Screens */
-//@media only screen and (min-width : 1200px)
+@media only screen and (min-width : 1200px)
+	.knowledge_center_item_part_1 .item, .knowledge_center_item_part_2 .item
+		min-height: 160px
 
 
 

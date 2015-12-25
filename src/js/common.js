@@ -247,6 +247,7 @@ $(document).ready(function () {
 
     if(br[1]=="8" || br[1]=="9"){
 
+
         $('.item_block__wrap').css( "background-size", "cover" );
         $('.item_block__wrap1').css( "background-size", "cover" );
         $('.item_block__wrap3').css( "background-size", "cover" );
