@@ -197,12 +197,12 @@
           });
           mutationObserver.observe(stickyElement, {subtree: true, childList: true});
         } else {
-          stickyElement.addEventListener('DOMNodeInserted', function() {
-            methods.setWrapperHeight(stickyElement);
-          }, false);
-          stickyElement.addEventListener('DOMNodeRemoved', function() {
-            methods.setWrapperHeight(stickyElement);
-          }, false);
+          //stickyElement.addEventListener('DOMNodeInserted', function() {
+          //  methods.setWrapperHeight(stickyElement);
+          //}, false);
+          //stickyElement.addEventListener('DOMNodeRemoved', function() {
+          //  methods.setWrapperHeight(stickyElement);
+          //}, false);
         }
       },
       update: scroller,

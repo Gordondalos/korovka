@@ -122,9 +122,6 @@ $(document).ready(function () {
         $(this).toggleClass('blak_nav');
         $('.app i').toggleClass('blak_nav');
         $('.drop_menu').slideToggle('fast');
-
-
-
     });
 
 
@@ -136,34 +133,31 @@ $(document).ready(function () {
     $('.down').click(function(e){
         e.preventDefault();
         var main_page = $("#sticker").parent().parent().hasClass("dubble_menu");
-
         if(!main_page){
             $(this).toggleClass('blak_nav');
             $('.down i').toggleClass('blak_nav');
             $('.drop_menu_down').slideToggle('fast');
-            var left_position_navbar = $(this).position().left;
-            var top_position_navbar = $(this).position().top;
-            var width_navbar = $(this).width();
+            left_position_navbar = $(this).offset().left -$(this).position().left;
             var heigth_navbar = $(this).height();
             var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-            $(".drop_menu_down").offset({top:posTop+heigth_navbar, left:left_position_navbar-167});
+            $(".drop_menu_down").css("right",left_position_navbar);
+            $(".drop_menu_down").offset({top:posTop+heigth_navbar});
         }else{
             $('.down').toggleClass('blak_nav');
             $('.down i').toggleClass('blak_nav');
             $('.drop_menu_down').slideToggle('fast');
-
+            left_position_navbar = $(this).offset().left -$(this).position().left;
             var top_position_min = $("#sticker").parent().parent().position().top;
             var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-
             if(posTop < top_position_min){
                 var top_position_navbar = top_position_min;
-                var left_position_navbar = $(this).position().left;
                 var heigth_navbar = $(this).height();
-                $(".drop_menu_down").offset({top:top_position_navbar+heigth_navbar, left:left_position_navbar-167});
+                $(".drop_menu_down").css("right",left_position_navbar);
+                $(".drop_menu_down").offset({top:top_position_navbar+heigth_navbar});
             }else{
-                var left_position_navbar = $(this).position().left;
                 var heigth_navbar = $(this).height();
-                $(".drop_menu_down").offset({top:posTop+heigth_navbar, left:left_position_navbar-167});
+                $(".drop_menu_down").css("right",left_position_navbar);
+                $(".drop_menu_down").offset({top:posTop+heigth_navbar});
             }
         }
 
@@ -176,13 +170,14 @@ $(document).ready(function () {
         var top_position_min = $("#sticker").parent().parent().position().top;
         var posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         var heigth_navbar = $('.down').height();
-        var left_position_navbar = $('.down').position().left;
 
+
+       // console.log(left_position_navbar);
         if(posTop < top_position_min){
-            $(".drop_menu_down").offset({top:top_position_min+heigth_navbar, left:left_position_navbar-167});
+            $(".drop_menu_down").offset({top:top_position_min+heigth_navbar});
             $(".search_form_down").offset({top:top_position_min+heigth_navbar});
         }else{
-            $(".drop_menu_down").offset({top:posTop+heigth_navbar, left:left_position_navbar-167});
+            $(".drop_menu_down").offset({top:posTop+heigth_navbar});
             $(".search_form_down").offset({top:posTop+heigth_navbar});
         }
 
@@ -244,8 +239,8 @@ $(document).ready(function () {
         if (!browser) return(false);
         else return(browser);
     }
-    
-    
+
+
     var br = browserDetectJS();
     //console.log(br[0]);
     //console.log(br[1]);
@@ -257,6 +252,9 @@ $(document).ready(function () {
         $('.item_block__wrap3').css( "background-size", "cover" );
         $('.item_block__wrap4').css( "background-size", "cover" );
         $('.item_block__wrap5').css( "background-size", "cover" );
+
+
+
     }
 
 
