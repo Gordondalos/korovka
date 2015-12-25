@@ -18,22 +18,40 @@
 	src: url('../fonts/LatoBold/LatoBold.eot')
 
 
+header, nav, section, article, aside, footer
+	display: block !important
+
+
 
 h1, h2, h3, h4, h5, h6
 	font-family: LeagueGothic !important
 
 
+.scroll_to
+	display: block !important
+
+header
+	display: block !important
+	width: 100%
 
 .header
-	display: none
+	display: block !important
+	width: 100%
+
+
+
 .main_lid
-	display: none
+	display: block
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6cffffff', endColorstr='#6cffffff')!important
+	background-image: url('../img/FFFFFF-0.8.png')
+	background-repeat: repeat
 
 .black_menu_horisontal
-	display: none
+	display: block
 
 .h1_block
 	width: 100%
+	margin-bottom: 50px
 	p
 		text-align: center
 	h3
@@ -52,6 +70,24 @@ h1, h2, h3, h4, h5, h6
 	.container-fluid
 		background-color: #28519C
 		padding-bottom: 40px
+
+.item_block_wrap1
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man.png', sizingMethod='scale') !important
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man.png', sizingMethod='scale')" !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .item_block__text
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#6cffffff', endColorstr='#6cffffff')!important
@@ -84,9 +120,15 @@ h1, h2, h3, h4, h5, h6
 	background-repeat: repeat
 	padding: 10px
 
+.knowledge_center_item_part_1.col-md-6
+	.row:first-child
+		min-height: 140px
+	.item-wrap
+		padding-bottom: 10px !important
+
+
 .knowledge_center_item_part_2,.knowledge_center_item_part_1
 	height: 300px
-	background-color: #efefef
 	width: 100%
 	margin: 10px 0
 	padding: 10px
@@ -94,6 +136,8 @@ h1, h2, h3, h4, h5, h6
 	.row.item-wrap
 		height: 117px !important
 		min-height: 117px !important
+
+
 		.col-sm-4
 			height: 117px !important
 			min-height: 117px !important
@@ -101,6 +145,7 @@ h1, h2, h3, h4, h5, h6
 			.item
 				height: 117px !important
 				min-height: 117px !important
+				text-align: center
 				.bg_item.bgitemas
 					height: 117px !important
 					min-height: 117px !important
@@ -110,17 +155,19 @@ h1, h2, h3, h4, h5, h6
 						display: none !important
 					span
 						font-size: 25px !important
-						display: inline !important
+						display: block !important
 						padding: 0
+						margin: 0 auto
+						text-align: center
+
 					.view-wrap
-						display: inline !important
-						left: 5px !important
-						bottom: 5px
-
-					a
-						display: inline !important
-						float: left !important
-
+						display: block !important
+						margin: 0 auto
+						text-align: center
+						a
+							display: block !important
+							margin: auto
+							width: 75px
 
 .knowledge_center_item_part_2
 	.item
@@ -135,15 +182,18 @@ h1, h2, h3, h4, h5, h6
 				display: none !important
 			span
 				font-size: 25px !important
-				display: inline !important
+				display: block !important
 				padding: 0
+				margin: 0 auto 15px
+
+				text-align: center
 			.view-wrap
-				display: inline !important
-				left: 5px !important
-				bottom: 5px
+				display: block !important
+				margin: 0 auto
+				text-align: center
 				a
 					display: inline !important
-					float: left !important
+					text-align: center
 
 .form-wrapper
 	input, textarea
@@ -172,7 +222,7 @@ h1, h2, h3, h4, h5, h6
 	display: none !important
 
 .div-wrapper-footer-ie
-	margin-top: 250px !important
+	margin-top: -1px !important
 	border: none !important
 	position: relative
 	.container-fluid
@@ -225,6 +275,22 @@ h1, h2, h3, h4, h5, h6
 	.padding_revraiter
 		padding: 5px !important
 
+.wrap-sertificat
+	img
+		float: left !important
+		display: inline-block
+
+	.wrap-h5-div-span
+		margin-left: 20px
+		display: inline-block
+		span
+			background-color: #234276
+			color: white
+			display: block
+			padding: 2px 5px
+			width: 41px
+			margin-top: 3px
+
 
 
 ul.adress_partners
@@ -264,13 +330,13 @@ img.contact_img
 .arrow_slide
 	display: none
 
-.fa.fa-search
-	position: absolute
-	top: 35%
-	left: 35%
-
-	padding: 0 !important
-	line-height: 20px !important
-	padding-bottom: 2px !important
-	margin-top: -2px !important
+//.fa.fa-search
+//	position: absolute
+//	top: 35%
+//	left: 35%
+//
+//	padding: 0 !important
+//	line-height: 20px !important
+//	padding-bottom: 2px !important
+//	margin-top: -2px !important
 

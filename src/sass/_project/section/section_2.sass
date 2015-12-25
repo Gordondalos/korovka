@@ -1,9 +1,12 @@
-
+.items
+	position: relative
 
 .item_block__wrap
 	height: 316px
 	background-color: grey
 	background-image: url(../img/man2.png)
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man2.png', sizingMethod='scale') !important
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man2.png', sizingMethod='scale')" !important
 	background-repeat: no-repeat
 	background-size: cover
 	margin-bottom: 30px
@@ -11,13 +14,15 @@
 .item_block__wrap1
 	@extend .item_block__wrap
 	background-image: url(../img/man.png)
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man.png', sizingMethod='scale') !important
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/man.png', sizingMethod='scale')" !important
 
 .item_block__text
 	position: absolute
 	background-color: rgba(255, 255, 255, 0.7)
 	width: 100%
 	padding: 10px
-	bottom: 15px
+	bottom: 0
 	p
 		display: none
 
@@ -27,14 +32,23 @@
 .relative
 	position: relative
 
+
 .col-md-4
 	.item_block__wrap3
 		@extend .item_block__wrap
 		background-image: url(../img/item3.jpg)
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item3.jpg', sizingMethod='scale') !important
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item3.jpg', sizingMethod='scale')" !important
 		height: 215px
+	.item_block__text
+		bottom: 29px
 	.item_block__wrap4
 		@extend .item_block__wrap3
 		background-image: url(../img/item4.jpg)
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item4.jpg', sizingMethod='scale') !important
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item4.jpg', sizingMethod='scale')" !important
 	.item_block__wrap5
 		@extend .item_block__wrap3
 		background-image: url(../img/item5.jpg)
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item5.jpg', sizingMethod='scale') !important
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/item5.jpg', sizingMethod='scale')" !important

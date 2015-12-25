@@ -194,8 +194,13 @@ $(document).ready(function () {
     //console.log(br[0]);
     //console.log(br[1]);
 
-    if(br[1]=="8"){
-        $('.cow').css( "background-size", "cover" );
+    if(br[1]=="8" || br[1]=="9"){
+      
+        $('.item_block__wrap').css( "background-size", "cover" );
+        $('.item_block__wrap1').css( "background-size", "cover" );
+        $('.item_block__wrap3').css( "background-size", "cover" );
+        $('.item_block__wrap4').css( "background-size", "cover" );
+        $('.item_block__wrap5').css( "background-size", "cover" );
     }
 
 

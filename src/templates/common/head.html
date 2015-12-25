@@ -18,9 +18,36 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<!--[if IE 8 ]>
-    <script>$.debugBGS = true;</script>
-    <script src="js/jquery.backgroundSize.js"></script>
+
+
+<!--[if lt IE 8]>
+<script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+</script>
+<![endif]-->
+
+
+<!--[if IE]>
+<script src="js/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <!--[if IE 8 ]>
 <link rel="stylesheet" href="css/ie8.css">
 <html class="ie ie8" lang="en">
 <![endif]-->
+    <!--<script>$.debugBGS = true;</script>-->
+    <!--<script src="js/jquery.backgroundSize.js"></script>-->
