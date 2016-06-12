@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+ // растягивание всей формы в ширину
+    var ww= $(window).width();
+    //$('.searchbardiv').css('width', ww);
+
+
+
 
     var page_h= $(window).height();
     //alert(page_h);
@@ -22,7 +28,11 @@ $(document).ready(function () {
 
 
  //приклеивание меню
+ 
+ 
     $("#sticker").sticky({topSpacing:20});
+	 //приклеивание меню
+	
     $(".toogle-img-partners").click(function(){
         var id = $(this).attr('id');
         $("#"+id).toggleClass("rotate");
@@ -68,18 +78,6 @@ $(document).ready(function () {
         });
     });
 
-    ////Обработка нажатия на кнопку "Вниз"
-    //$(".scroll_to").click(function (e) {
-    //    e.preventDefault();
-    //    var elementClick = $(this).attr("href");
-    //
-    //    console.log(elementClick);
-    //    var destination = $('.' + elementClick).offset().top - 70;
-    //    console.log(destination);
-    //    $('body,html').animate({scrollTop: destination}, 2000);
-    //
-    //    return false;
-    //});
 
 
 
