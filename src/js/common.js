@@ -67,8 +67,8 @@ $(document).ready(function () {
     });
 
     // появление поиска
-    $('#search2').click(function (e) {
-        e.preventDefault();
+    $('#search2').click(function () {
+
         $('#search_form_mobile').toggle(function () {
             $('#search_form_mobile').css("opacity", "1");
 
